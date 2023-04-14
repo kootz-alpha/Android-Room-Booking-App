@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/bg_main"
+    tools:context=".SignInPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:paddingVertical="20dp"
+        android:background="@drawable/bg_dark_curved"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:hint="Enter Name: "
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/etUsrnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:hint="Enter Reg No: "
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/etPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:hint="Enter Password: "
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:minHeight="48dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Profile Picture"
+            android:thumbTint="#FF6E40"
+            android:trackTint="#FF6E40"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:hint="Enter Date Of Birth: "
+                android:gravity="center"
+                android:minHeight="48dp"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pick date"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_buttons"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:onClick="signin"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/bg_buttons"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
